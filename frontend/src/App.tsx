@@ -1,9 +1,31 @@
-import React from 'react'
+import React from "react";
+import Home from "./pages/Home";
+import { Routes, Route } from "react-router-dom";
+import Collection from "./pages/Collection";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Product from "./pages/Product";
+import Cart from "./pages/Cart";
+import Login from "./pages/Login";
+import PlaceOrder from "./pages/PlaceOrder";
+import Orders from "./pages/Orders";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/collection" element={<Collection />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<Product />} />
+        <Route path="/about" element={<Cart />} />
+        <Route path="/about" element={<Login />} />
+        <Route path="/about" element={<PlaceOrder />} />
+        <Route path="/about" element={<Orders />} />
+      </Routes>
+    </div>
+  );
+};
 
-export default App
+export default App;
