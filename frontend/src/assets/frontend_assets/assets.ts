@@ -74,7 +74,41 @@ import razorpay_logo from './razorpay_logo.png'
 import stripe_logo from './stripe_logo.png'
 import cross_icon from './cross_icon.png'
 
-export const assets = {
+export interface Assets {
+  logo: string;
+  hero_img: string;
+  cart_icon: string;
+  dropdown_icon: string;
+  exchange_icon: string;
+  profile_icon: string;
+  quality_icon: string;
+  search_icon: string;
+  star_dull_icon: string;
+  star_icon: string;
+  bin_icon: string;
+  support_img: string;
+  menu_icon: string;
+  about_img: string;
+  contact_img: string;
+  razorpay_logo: string;
+  stripe_logo: string;
+  cross_icon: string;
+}
+
+export interface Product {
+  _id: string;
+  name: string;
+  description: string;
+  price: number;
+  image: string[];
+  category: "Men" | "Women" | "Kids";
+  subCategory: "Topwear" | "Bottomwear" | "Winterwear";
+  sizes: ("S" | "M" | "L" | "XL" | "XXL")[];
+  date: number;
+  bestseller: boolean;
+}
+
+export const assets: Assets = {
     logo,
     hero_img,
     cart_icon,
@@ -95,7 +129,7 @@ export const assets = {
     cross_icon
 }
 
-export const products = [
+export const products: Product[] = [
     {
         _id: "aaaaa",
         name: "Women Round Neck Cotton Top",
