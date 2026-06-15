@@ -26,14 +26,14 @@ const Footer = () => {
           <p className="text-xl font-medium mb-5">GET IN TOUCH</p>
           <ul>
             <li>+91 9988998899</li>
-            <li>contact@demo.com</li>
+            <li>contact@thenorthface.com</li>
           </ul>
         </div>
       </div>
       <div>
         <hr />
         <p className="py-5 text-sm text-center">
-          Copyright 2026@ demo.com - All Right Reserved.
+          Copyright 2026@thenorthface.com - All Right Reserved.
         </p>
       </div>
     </div>

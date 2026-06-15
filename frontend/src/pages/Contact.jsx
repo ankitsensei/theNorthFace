@@ -19,7 +19,7 @@ const Contact = () => {
           </p>
           <p className="text-gray-500">
             Tel: (425) 342-1029 <br />
-            Email: admin@forever.com
+            Email: admin@thenorthface.com
           </p>
           <p className="font-semibold text-xl text-gray-600">
             Careers at Forever

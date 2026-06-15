@@ -14,25 +14,24 @@ const About = () => {
         <img src={assets.about_img} alt="" className="w-full md:max-w-112.5" />
         <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600">
           <p>
-            Forever was born out of a passion for innovation and a desire to
-            revolutionize the way people shop online. Our journey began with a
-            simple idea: to provide a platform where customers can easily
-            discover, explore, and purchase a wide range of products from the
-            comfort of their homes.
+            Named for the most challenging side of the mountain, The North Face
+            has equipped explorers since 1966 to reach their dreams. Driven by
+            the mantra of Never Stop Exploring™, our expeditions inspire us to
+            test the outer limits of performance and possibility.
           </p>
           <p>
-            Since our inception, we've worked tirelessly to curate a diverse
-            selection of high-quality products that cater to every taste and
-            preference. From fashion and beauty to electronics and home
-            essentials, we offer an extensive collection sourced from trusted
-            brands and suppliers.
+            In 1966, a young climber named Doug Tompkins used his savings to
+            start a revolution. A humble shop in San Francisco soon became a
+            cultural trading post where the Grateful Dead played live, the Beat
+            Generation shared new ideas and a who’s who of American climbers
+            stopped in after traversing Yosemite.
           </p>
           <b className="text-gray-800">Our Mission</b>
           <p>
-            Our mission at Forever is to empower customers with choice,
-            convenience, and confidence. We're dedicated to providing a seamless
-            shopping experience that exceeds expectations, from browsing and
-            ordering to delivery and beyond.
+            Inspired by architect and inventor R. Buckminster “Bucky” Fuller’s
+            theory of sphericity, The Oval InTENTion is introduced,
+            revolutionizing the A-shaped tent. The first of its kind, the tent
+            incorporated maximum efficiency with minimum materials.
           </p>
         </div>
       </div>
