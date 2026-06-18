@@ -10,8 +10,12 @@ const adminAuth = async (req, res, next) => {
       });
     }
     const token_decode = jwt.verify(token, process.env.JWT_SECRET);
+    console.log(token);
+    console.log(token_decode);
 
-    if (token_decode !== process.env.ADMIN_EMAIL + process.env.ADMIN_PASSWORD) {
+    const { email } = jwt.verify(token, process.env.JWT_SECRET);
+
+    if (email !== process.env.ADMIN_EMAIL) {
       return res.json({
         success: false,
         message: "Not Authorized Login Again",
