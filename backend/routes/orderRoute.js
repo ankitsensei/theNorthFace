@@ -9,6 +9,7 @@ import {
   updateStatus,
 } from "../controllers/orderController.js";
 import adminAuth from "../middleware/adminAuth.js";
+import authUser from "../middleware/auth.js";
 
 const orderRouter = express.Router();
 
@@ -22,6 +23,6 @@ orderRouter.post("/stripe", authUser, placeOrderStripe);
 orderRouter.post("/razorpay", authUser, placeOrderRazorpay);
 
 // User Feature
-orderRouter.post("placeorders", auth, userOrders);
+orderRouter.post("placeorders", authUser, userOrders);
 
 export default orderRouter;

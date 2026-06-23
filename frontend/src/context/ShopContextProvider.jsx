@@ -157,6 +157,7 @@ const ShopContextProvider = ({ children }) => {
     setShowSearch,
     cartItems,
     addToCart,
+    setCartItems,
     getCartCount,
     updateQuantity,
     getCartAmount,

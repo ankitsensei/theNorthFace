@@ -4,6 +4,8 @@ import CartTotal from "../components/CartTotal";
 import { assets } from "../assets/frontend_assets/assets";
 import { useNavigate } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const PlaceOrder = () => {
   const {
@@ -54,7 +56,33 @@ const PlaceOrder = () => {
           }
         }
       }
-      console.log(orderItems);
+      let orderData = {
+        address: formData,
+        items: orderItems,
+        amount: getCartAmount() + delivery_fee,
+      };
+
+      switch (method) {
+        case "cod": {
+          const response = await axios.post(
+            backendurl + "/api/order/place",
+            orderData,
+            { headers: { token } },
+          );
+          console.log(response);
+
+          if (response.data.success) {
+            setCartItems({});
+            navigate("/orders");
+          } else {
+            toast.error(response.data.message);
+          }
+          break;
+        }
+
+        default:
+          break;
+      }
     } catch (error) {
       console.log(error);
     }
