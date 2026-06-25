@@ -10,7 +10,7 @@ import { toast } from "react-toastify";
 const PlaceOrder = () => {
   const {
     navigate,
-    backendurl,
+    backendUrl,
     token,
     cartItems,
     setCartItems,
@@ -65,7 +65,7 @@ const PlaceOrder = () => {
       switch (method) {
         case "cod": {
           const response = await axios.post(
-            backendurl + "/api/order/place",
+            backendUrl + "/api/order/place",
             orderData,
             { headers: { token } },
           );
@@ -81,7 +81,7 @@ const PlaceOrder = () => {
         }
         case "stripe": {
           const responseStripe = await axios.post(
-            backendurl + "/api/order/stripe",
+            backendUrl + "/api/order/stripe",
             orderData,
             { headers: { token } },
           );
