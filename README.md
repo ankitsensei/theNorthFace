@@ -122,18 +122,22 @@ npm run dev
 
 ## 📸 Screenshots
 
-> Add screenshots here.
-
+### Homescreen
+![alt text](screenshots/screenshot4.png)
+### Collection page
+![alt text](screenshots/screenshot3.png)
+### Product details
+![alt text](screenshots/screenshot2.png)
+### Stripe payment gateway
+![alt text](screenshots/screenshot1.png)
 ---
-
 ## 👨‍💻 Author
 
 **Ankit Bhagat**
 
-GitHub: https://github.com/ankitsensei
-X: https://x.com/webdevankit
-Linkedin: https://www.linkedin.com/in/ankit-bhagat-139276241/
-
+- GitHub: https://github.com/ankitsensei
+- X: https://x.com/webdevankit
+- LinkedIn: https://www.linkedin.com/in/ankit-bhagat-139276241/
 ---
 
 <p align="center">
